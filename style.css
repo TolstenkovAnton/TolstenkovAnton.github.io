@@ -3,11 +3,11 @@ header
     .topmenu
     {
         width:100%;
-        background-color:#3a0808;
+        background-color:#fff19f;
         height: 200px;
     }
 
-    .logotype
+    .logo
     {
         float:left;
         margin:1px;
@@ -17,19 +17,19 @@ header
 
     .maintext
     {
-        color: #fff;
+        color: #000000;
     }
 
-    #menu
+    .menu
     {
         width:100%;
         margin-left: auto;
-        background-color:#fff;
+        background-color:#fff19f;
         height:50px;
         max-width: 960px;
     }
 
-    #navigation
+    #nav
     {
         text-align: center;
         vertical-align: middle;
@@ -46,7 +46,7 @@ table
 
 tr
 {
-  background-color: #d24d94;
+  background-color: #bfca1c;
   border-bottom: 2px solid #000;
 }
 tr td
@@ -63,12 +63,12 @@ footer
   display: block;
   width: 100%;
   height: 30px;
-  background-color: #3f122a;
+  background-color: #fff19f;
 }
 
 body
 {
-  background-color: #f892c5;
+  background-color: #bfca1c;
   font-family: serif, "Times New Roman";
   font-size: 23px;
   width: 100%;
