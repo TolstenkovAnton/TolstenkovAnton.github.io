@@ -1,9 +1,9 @@
 header
 {
-    .topmenu
+    .mainmenu
     {
         width:100%;
-        background-color:#fff19f;
+        background-color:#798109;
         height: 200px;
     }
 
@@ -68,7 +68,7 @@ footer
 
 body
 {
-  background-color: #bfca1c;
+  background-color: #798109;
   font-family: serif, "Times New Roman";
   font-size: 23px;
   width: 100%;
