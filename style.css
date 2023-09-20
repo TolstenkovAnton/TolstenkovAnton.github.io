@@ -11,8 +11,8 @@ header
     {
         float:left;
         margin:1px;
-        width:10px;
-        height:10px;
+        width:90px;
+        height:90px;
     }
 
     .maintext
@@ -35,7 +35,6 @@ header
         vertical-align: middle;
         line-height: 50px;
         width: 100%;
-        word-spacing: 50px;
     }
 }
 
