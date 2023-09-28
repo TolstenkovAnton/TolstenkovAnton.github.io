@@ -2,33 +2,24 @@ header
 {   
     display: flex;
     flex-direction: column;
-    border:4px solid rgb(0, 0, 0);
     .menu
     {
       width:100%;
       background-color:#AFEEEE;
       height:180px;
     }
-    .nav
-    {
-      border-right:4px solid rgb(0, 0, 0);
-      border-bottom:4px solid rgb(0, 0, 0);
-      background-color:#87CEFA;
-      height: 57px;
-      width: 160px;
-    }
     .logo
-    { 
-      float:left;
-      margin:15px;
+    {  
       width:90px;
       height:90px;
     }
-    #tit
-    {
-      text-align: center;
-      color: #000000;
-    }
+}
+
+nav
+{
+    background-color:#87CEFA;
+    height: 57px;
+    width: 160px;
 }
 
 table
@@ -46,7 +37,7 @@ table
 }
 tr
 {
-  background-color: #bfca1c;
+  background-color: #000000;
   border-bottom: 2px solid #000;
 }
 tr td
@@ -55,12 +46,11 @@ tr td
   border-left: 2px solid #000000;
 }
 
-
 footer
 {
   border:4px solid rgb(0, 0, 0);
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: 70px;
   background-color: #AFEEEE;
 }
@@ -69,6 +59,25 @@ footer
     display: flex;
     flex-direction: column;
     flex: 3;
+    font-family: 'Times New Roman', serif;
+    margin: 0 auto;
+    padding-top: 0;
+
+    .url :nth-child(4) {
+        order: 4;
+    }
+
+    .url :nth-child(1) {
+        order: 1;
+    }
+
+    .url :nth-child(2) {
+        order: 3;
+    }
+
+    .url :nth-child(3) {
+        order: 2;
+    }
 }
 
 .cblock {
@@ -109,12 +118,12 @@ body
         flex-direction: row;
     }
 
-    .url :nth-child(3) {
-        order: 3;
-    }
-
     .url :nth-child(2) {
         order: 2;
+    }
+
+    .url :nth-child(3) {
+        order: 3;
     }
 
     .form {
