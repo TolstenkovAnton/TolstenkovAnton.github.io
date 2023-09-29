@@ -35,19 +35,19 @@ table
 {
   border-collapse: collapse;
   border: 4px solid rgb(0, 0, 0);
-  .col1
-  {
-    background-color: #87CEFA;
-  }
-  .col2
-  {
-    background-color: #AFEEEE;
-  }
 }
 tr
 {
-  background-color: #bfca1c;
+  background-color: #7FFFD4;
   border-bottom: 2px solid #000;
+}
+tr.col1
+{
+  background-color: #87CEFA;
+}
+tr.col2
+{
+  background-color: #AFEEEE;
 }
 tr td
 {
