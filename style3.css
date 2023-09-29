@@ -100,7 +100,8 @@ header
 }
 
 h1
-{  
+{ 
+  font-size: calc(1.5rem + 6 * (100vw - 320px) / 880);
   font-family: Georgia, "Times New Roman";
   text-align: center;
 }
@@ -193,10 +194,6 @@ body
 
 @media screen and (min-width: 800px) and (orientation: landscape) 
 {
-  .h1
-  {  
-    font-size: 40px;
-  }
   .header 
   {
     flex-direction: row;
