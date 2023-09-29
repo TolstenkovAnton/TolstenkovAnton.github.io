@@ -100,7 +100,7 @@ header
 }
 
 h1
-{
+{  
   font-family: Georgia, "Times New Roman";
   text-align: center;
 }
@@ -177,11 +177,8 @@ footer
   max-height: 100%;
   border-radius: 10px;
   background-color: #AFEEEE;
-  border-color: rgb(0, 0, 0);
-  border: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  padding: 0;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -196,6 +193,10 @@ body
 
 @media screen and (min-width: 800px) and (orientation: landscape) 
 {
+  h1
+  {  
+    font-size: 40px;
+  }
   .header 
   {
     flex-direction: row;
