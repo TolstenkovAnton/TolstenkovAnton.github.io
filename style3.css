@@ -1,43 +1,133 @@
 header
 {   
-    display: flex;
     flex-direction: column;
     .menu
     {
       width:100%;
       background-color:#AFEEEE;
-      height:180px;
+      height:70px;
     }
     .logo
-    {  
-      width:90px;
-      height:90px;
-    }
+    {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      height: 90px;
+      weight: 90px;
+    } 
     .nav
     {
-      background-color:#00395c;
       height: 900px;
       width: 160px;
     }
 }
 
+.btn 
+{
+  max-width: 100%;
+  border-radius: 10px;
+  border: none;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: auto;
+  margin: 15px 30px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  
+}
+
+.btn:after 
+{
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:before 
+{
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+  
+.btn-sep 
+{
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before 
+{
+  background: rgba(0,0,0,0.15);
+}
+
+.btn-1 
+{
+  background: #2980b9;
+  color: #fff;
+}
+
+.btn-1:hover 
+{
+  background: #7FFFD4;
+}
+
+.btn-1:active 
+{
+  background: #2980b9;
+  top: 2px;
+}
+
+.btn-1:before 
+{
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+h1
+{
+  font-family: Georgia, "Times New Roman";
+  text-align: center;
+}
+
+h2
+{
+  text-align: center;
+}
+
 table
 {
-    border-collapse: collapse;
-    border: 4px solid rgb(0, 0, 0);
-    .col1
-    {
-    background-color: #87CEFA;
-    }
-    .col2
-    {
-    background-color: #AFEEEE;
-    }
+  margin: auto;
+  border-collapse: collapse;
+  border: 4px solid rgb(0, 0, 0);
 }
 tr
 {
-  background-color: #000000;
+  background-color: #7FFFD4;
   border-bottom: 2px solid #000;
+}
+tr.col1
+{
+  background-color: #87CEFA;
+}
+tr.col2
+{
+  background-color: #AFEEEE;
 }
 tr td
 {
@@ -53,76 +143,77 @@ footer
     background-color: #AFEEEE;
 }
 
-.url {
-    display: flex;
-    flex-direction: column;
-    flex: 3;
-    font-family: 'Times New Roman', serif;
-    margin: 0 auto;
-    padding-top: 0;
+.url 
+{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  margin: 0 auto;
+  padding-top: 0;
 
-    .url :nth-child(4) {
-        order: 4;
-    }
-
-    .url :nth-child(1) {
-        order: 1;
-    }
-
-    .url :nth-child(2) {
-        order: 3;
-    }
-
-    .url :nth-child(3) {
-        order: 2;
-    }
+  .url :nth-child(4) 
+  {
+    order: 4;
+  }
+  .url :nth-child(1) 
+  {
+    order: 1;
+  }
+  .url :nth-child(2) 
+  {
+    order: 3;
+  }
+  .url :nth-child(3) 
+  {
+    order: 2;
+  }
 }
 
-.cblock {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px;
-    background-color: #AFEEEE;
-    border-color: rgb(0, 0, 0);
-    border: 10px;
-    margin: 0 auto;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 0;
-    padding-top: 10px;
-    padding-bottom: 20px;
+.block 
+{
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  background-color: #AFEEEE;
+  border-color: rgb(0, 0, 0);
+  border: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 body
 {
-    background-color: #7FFFD4;
-    font-family: serif, "Times New Roman";
-    font-size: 23px;
-    width: 100%;
+  font-family: Verdana, Helvetica, Arial, sans-serif;
+  background-color: #7FFFD4;
+  font-size: 23px;
+  width: 100%;
 }
 
 @media screen and (min-width: 800px) and (orientation: landscape) 
 {
-    .header 
-    {
-        flex-direction: row;
-    }
-    .nav 
-    {
-        flex-direction: row;
-    }
-
-    .url :nth-child(2) {
-        order: 2;
-    }
-
-    .url :nth-child(3) {
-        order: 3;
-    }
-
-    .form {
-        width: 540px;
-    }
+  .header 
+  {
+    flex-direction: row;
+  }
+  .nav 
+  {
+    flex-direction: row;
+  }
+  .url :nth-child(2) 
+  {
+    order: 2; 
+  }
+  .url :nth-child(3) 
+  {
+    order: 3;
+  }
+  .form 
+  {
+    width: 540px;
+  }
 }
