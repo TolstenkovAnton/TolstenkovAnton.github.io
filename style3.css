@@ -3,6 +3,7 @@ header
     flex-direction: column;
     .menu
     {
+      order: 1;
       width:100%;
       background-color:#AFEEEE;
       height:70px;
@@ -16,7 +17,8 @@ header
       weight: 90px;
     } 
     .nav
-    {
+    { 
+      order: 2;
       height: 900px;
       width: 160px;
     }
@@ -113,6 +115,7 @@ h2
 
 table
 {
+  order: 4;
   margin: auto;
   border-collapse: collapse;
   border: 4px solid rgb(0, 0, 0);
@@ -136,8 +139,14 @@ tr td
   border-left: 2px solid #000000;
 }
 
+form
+{
+  order: 6;
+}
+
 footer
 {
+    order: 5;
     display: block;
     max-width: 100%;
     height: 40px;
@@ -146,6 +155,7 @@ footer
 
 .url 
 {
+  order: 3;
   display: flex;
   flex-direction: column;
   flex: 3;
@@ -168,6 +178,8 @@ footer
 
 body
 {
+  display: flex;
+  flex-direction: column;
   font-family: Verdana, Helvetica, Arial, sans-serif;
   background-color: #7FFFD4;
   font-size: 23px;
@@ -187,8 +199,5 @@ body
   .form 
   {
     width: 540px;
-  }
-  #table {
-    order: 1;
   }
 }
