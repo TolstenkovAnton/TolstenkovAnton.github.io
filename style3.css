@@ -73,6 +73,7 @@ h1
 
 table
 {
+  margin: auto;
   text-align: center;
   border-collapse: collapse;
   border: 2px solid rgb(0, 0, 0);
