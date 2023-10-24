@@ -1,137 +1,93 @@
 header
 {   
-    flex-direction: column;
-    .menu
-    {
-      order: 1;
-      width:100%;
-      background-color:#AFEEEE;
-      height:70px;
-    }
-    .logo
-    {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      height: 90px;
-      weight: 90px;
-    } 
-    .nav
-    { 
-      order: 2;
-      height: 900px;
-      width: 160px;
-    }
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 280px;
+  width: 100%;
 }
 
-.btn 
+.logo 
 {
-  max-width: 100%;
-  border-radius: 10px;
-  border: none;
-  color: inherit;
-  background: none;
-  cursor: pointer;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  height: 130px;
+  width: 130px;
+}
+
+.nav
+{
+  float:right;
+  background-color: #9370DB;
+  color:#ffffff;
+  height: 106px;
+  border-radius: 30px;
+  margin-top:18px;
+  margin-right: 18px;
+}
+
+.button 
+{
   display: inline-block;
-  padding: auto;
-  margin: 15px 30px;
-  letter-spacing: 1px;
-  font-weight: 700;
-  outline: none;
-  position: relative;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-  
-}
-
-.btn:after 
-{
-  content: '';
-  position: absolute;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.btn:before 
-{
-  text-transform: none;
-  line-height: 1;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-}
-  
-.btn-sep 
-{
-  padding: 25px 60px 25px 120px;
-}
-
-.btn-sep:before 
-{
-  background: rgba(0,0,0,0.15);
-}
-
-.btn-1 
-{
-  background: #2980b9;
-  color: #fff;
-}
-
-.btn-1:hover 
-{
-  background: #7FFFD4;
-}
-
-.btn-1:active 
-{
-  background: #2980b9;
-  top: 2px;
-}
-
-.btn-1:before 
-{
-  position: absolute;
-  height: 100%;
-  left: 0;
-  top: 0;
-  line-height: 3;
-  font-size: 140%;
-  width: 60px;
-}
-
-h1
-{ 
-  font-size: calc(1.5rem + 6 * (100vw - 320px) / 880);
+  background-color: #ffffff;
+  color:#9370DB;
   font-family: Georgia, "Times New Roman";
+  width: 220px;
+  height: 30px;
+  margin: 8px;
+  padding:30px;
+  border-radius: 30px;
   text-align: center;
 }
 
-h2
+#name
 {
+  padding-top: 80px;
+  padding-left: 250px;
+  font-size: 100px;
+  font-family: Georgia, "Times New Roman";
+  color: #9370DB;
+}
+
+.block
+{
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1
+{
+  margin-top: 8px;
+  color: #9370DB;
+  font-family: Georgia, "Times New Roman";
   text-align: center;
 }
 
 table
 {
-  order: 4;
-  margin: auto;
+  text-align: center;
   border-collapse: collapse;
-  border: 4px solid rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
 }
 tr
 {
-  background-color: #7FFFD4;
   border-bottom: 2px solid #000;
 }
 tr.col1
 {
-  background-color: #87CEFA;
+  background-color: #ffffff;
 }
 tr.col2
 {
-  background-color: #AFEEEE;
+  background-color: #9370DB;
 }
 tr td
 {
@@ -139,65 +95,28 @@ tr td
   border-left: 2px solid #000000;
 }
 
-form
+body
 {
-  order: 6;
+  display:block;
+  background-color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  font-size: 23px;
+  margin: 8px;
 }
 
 footer
 {
-    order: 5;
-    display: block;
-    max-width: 100%;
-    height: 40px;
-    background-color: #AFEEEE;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-top: 8px;
+  height: 100px;
 }
 
-.url 
+#footer_txt
 {
-  order: 3;
-  display: flex;
-  flex-direction: column;
-  flex: 3;
-  margin: 0 auto;
-  padding-top: 0;
-}
-
-.block 
-{
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 10px;
-  background-color: #AFEEEE;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-body
-{
-  display: flex;
-  flex-direction: column;
-  font-family: Verdana, Helvetica, Arial, sans-serif;
-  background-color: #7FFFD4;
-  font-size: 23px;
-  width: 100%;
-}
-
-@media screen and (min-width: 800px) and (orientation: landscape) 
-{
-  .header 
-  {
-    flex-direction: row;
-  }
-  .nav 
-  {
-    flex-direction: row;
-  }
-  .form 
-  {
-    width: 540px;
-  }
+  font-family: Georgia, "Times New Roman";
+  color: #9370DB;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 25px
 }
