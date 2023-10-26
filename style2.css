@@ -1,6 +1,6 @@
 header
 {   
-  background-color: #ffffff;
+  background-color: #031926;
   border-radius: 30px;
   height: 280px;
   width: 100%;
@@ -19,7 +19,7 @@ header
 {
   float:right;
   background-color: #9370DB;
-  color:#ffffff;
+  color:#031926;
   height: 106px;
   border-radius: 30px;
   margin-top:18px;
@@ -29,7 +29,7 @@ header
 .button 
 {
   display: inline-block;
-  background-color: #ffffff;
+  background-color: #031926;
   color:#9370DB;
   font-family: Georgia, "Times New Roman";
   width: 220px;
@@ -51,7 +51,7 @@ header
 
 .block
 {
-  background-color: #ffffff;
+  background-color: #031926;
   border-radius: 30px;
   margin-top: 8px;
   padding-top: 40px;
@@ -73,6 +73,7 @@ h1
 
 table
 {
+  color: #031926;
   margin: auto;
   text-align: center;
   border-collapse: collapse;
@@ -98,6 +99,7 @@ tr td
 
 body
 {
+  color: #9370DB;
   display: block;
   background-color: #9370DB;
   font-family: Georgia, "Times New Roman";
@@ -107,7 +109,7 @@ body
 
 footer
 {
-  background-color: #ffffff;
+  background-color: #031926;
   border-radius: 30px;
   margin-top: 8px;
   height: 100px;
