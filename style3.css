@@ -1,5 +1,5 @@
 header
-{   
+{ order: 1;
   background-color: #ffffff;
   border-radius: 30px;
   height: 280px;
@@ -15,24 +15,12 @@ header
   width: 130px;
 }
 
-.nav
-{
-  float:right;
-  background-color: #9370DB;
-  color:#ffffff;
-  height: 106px;
-  border-radius: 30px;
-  margin-top:18px;
-  margin-right: 18px;
-}
-
 .button 
 {
-  display: inline-block;
-  background-color: #ffffff;
-  color:#9370DB;
+  background-color: #9370DB;
+  color:#ffffff;
   font-family: Georgia, "Times New Roman";
-  width: 220px;
+  display:flex;
   height: 30px;
   margin: 8px;
   padding:30px;
@@ -49,8 +37,55 @@ header
   color: #9370DB;
 }
 
-.block
+.block_nav
 {
+  order: 2;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.block_links
+{
+  order: 3;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.block_table
+{
+  order: 4;
+  background-color: #ffffff;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.block_form
+{
+  order: 5;
   background-color: #ffffff;
   border-radius: 30px;
   margin-top: 8px;
@@ -98,7 +133,8 @@ tr td
 
 body
 {
-  display:block;
+  display:flex;
+  flex-direction: column;
   background-color: #9370DB;
   font-family: Georgia, "Times New Roman";
   font-size: 23px;
@@ -106,7 +142,8 @@ body
 }
 
 footer
-{
+{ 
+  order: 6;
   background-color: #ffffff;
   border-radius: 30px;
   margin-top: 8px;
@@ -120,4 +157,37 @@ footer
   font-size: 50px;
   text-align: center;
   padding-top: 25px
+}
+
+@media (orientation: portrait)
+{
+
+  header
+  {
+    order: 1;
+  }
+  #name
+  {
+    padding-top: 25px;
+  }
+  .block_nav
+  {
+    order: 2;
+  }
+  .block_table
+  {
+    order: 3;
+  }
+  .block_links
+  {
+    order: 4;
+  }
+  .block_form
+  {
+    order: 5;
+  }
+  footer
+  {
+    order: 6;
+  };
 }
