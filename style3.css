@@ -194,18 +194,22 @@ footer
   {
     order: 2;
     padding: 10px;
+    width: 100%;
   }
   .block_table
   {
     order: 3;
+    width: 100%;
   }
   .block_links
   {
     order: 4;
+    width: 100%;
   }
   .block_form
   {
     order: 5;
+    width: 100%;
   }
   footer
   {
