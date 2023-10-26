@@ -187,7 +187,7 @@ footer
     position: absolute;
     top: 10px;
     left: 10px;
-    height: 120px;
+    height: 130px;
   }
   .block_nav
   {
@@ -197,14 +197,20 @@ footer
   .block_table
   {
     order: 3;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .block_links
   {
     order: 4;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .block_form
   {
     order: 5;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   footer
   {
