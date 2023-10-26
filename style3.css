@@ -33,6 +33,7 @@ header
   padding-top: 80px;
   padding-left: 250px;
   font-family: Georgia, "Times New Roman";
+  font-weight:300;
   color: #9370DB;
 }
 
@@ -152,6 +153,7 @@ footer
   font-family: Georgia, "Times New Roman";
   color: #9370DB;
   font-size: 160%;
+  font-weight:900;
   text-align: center;
   padding-top: 25px
 }
@@ -170,7 +172,12 @@ footer
     padding-left: 130px;
     font-size: 150%;
     font-family: Georgia, "Times New Roman";
+    font-weight:900;
     color: #9370DB;
+  }
+  h1
+  {
+    font-size: 30px;
   }
   .logo
   {
@@ -183,6 +190,7 @@ footer
   .block_nav
   {
     order: 2;
+    padding: 10px;
   }
   .block_table
   {
