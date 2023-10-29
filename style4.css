@@ -1,0 +1,233 @@
+header
+{ 
+  order: 1;
+  background-color: #031926;
+  border-radius: 0px 0px 30px 30px;
+  height: 280px;
+  width: 100%;
+}
+
+.logo 
+{
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  height: 130px;
+  width: 130px;
+}
+
+.button 
+{
+  background-color: #9370DB;
+  color:#031926;
+  font-family: Georgia, "Times New Roman";
+  display:flex;
+  height: 30px;
+  margin: 8px;
+  padding:30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+#name
+{
+  padding-top: 80px;
+  padding-left: 250px;
+  font-family: Georgia, "Times New Roman";
+  font-weight:300;
+  color: #9370DB;
+}
+
+.block_nav
+{
+  order: 2;
+  background-color: #031926;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block_links
+{
+  order: 3;
+  background-color: #031926;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.block_table
+{
+  order: 4;
+  background-color: #031926;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.block_form
+{
+  order: 5;
+  background-color: #031926;
+  border-radius: 30px;
+  margin-top: 8px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h1
+{
+  margin-top: 8px;
+  color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  text-align: center;
+}
+
+table
+{
+  color:#031926;
+  margin: auto;
+  text-align: center;
+  border-collapse: collapse;
+  border: 2px solid rgb(0, 0, 0);
+}
+tr
+{
+  border-bottom: 2px solid #000;
+}
+tr.col1
+{
+  background-color: #ffffff;
+}
+tr.col2
+{
+  background-color: #9370DB;
+}
+tr td
+{
+  border-right: 2px solid black;
+  border-left: 2px solid #000000;
+}
+
+body
+{
+  display:flex;
+  flex-direction: column;
+  background-color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  font-size: 23px;
+  margin: 0px;
+  color:#9370DB;
+}
+
+footer
+{ 
+  order: 6;
+  background-color: #031926;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: 8px;
+  height: 90px;
+}
+
+#footer_txt
+{
+  font-family: Georgia, "Times New Roman";
+  color: #9370DB;
+  font-size: 160%;
+  font-weight:900;
+  text-align: center;
+  padding-top: 25px
+}
+
+@media (orientation: portrait)
+{
+
+  header
+  {
+    order: 1;
+    height: 140px;
+  }
+  #name
+  {
+    padding-top: 40px;
+    padding-left: 130px;
+    font-size: 150%;
+    font-family: Georgia, "Times New Roman";
+    font-weight:900;
+    color: #9370DB;
+  }
+  h1
+  {
+    font-size: 30px;
+  }
+  .logo
+  {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 130px;
+  }
+  .block_nav
+  {
+    order: 2;
+    padding: 10px;   
+  }
+  .block_table
+  {
+    order: 3;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .block_links
+  {
+    order: 4;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .block_form
+  {
+    order: 5;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  footer
+  {
+    order: 6;
+  };
+}
+
+@media (min-width: 800px)
+{
+  #name
+  {
+    font-size: 90px;
+  }
+  
+  .block_nav
+  {
+    display: flex;
+    flex-direction: row;
+  }
+}

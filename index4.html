@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+      <title>REC LABELS</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style3.css">
+    </head>
+    <body>
+        <header> 
+          <img src="icon.png" alt = "logo" class = "logo"> 
+          <div id = "name">RECORDING LABELS</div> 
+        </header>
+        <div class = "block_nav">
+          <a href="https://internetmoneyrecords.com/" class="button">Internet Money</a>
+          <a href="https://atlanticrecords.com/" class="button">Atlantic Records</a>
+          <a href="https://www.ovosound.com/" class="button">OVO Sound</a>
+        </div>
+        <div class = "block_links">
+          <h1>Ссылки</h1>
+          <ul>
+            <li><a href="http://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+            <li><a href="https://kubsu.ru/">Абсолютная гиперссылка на главную сайта kubsu.ru в протоколе https</a></li>
+            <li><a href="https://kubsu.ru/"><img src = "https://gamehag.com/static/avatar/339701_max.jpg" id="Картинка" alt="Meme batman"></a></li>
+            <li><a href="/index.html">Сокращённая ссылка на внутреннюю страницу</a></li>
+            <li><a href="/">Сокращённая ссылка на главную страницу</a></li>
+            <li><a href="https://translate.google.com/?hl=ru&sl=en&tl=ru">Ссылка с тремя параметрами</a></li>
+            <li><a href="#Картинка">Бутмин</a></li>
+            <li><a href="./index.html">Относительная в текущем каталоге</a></li>
+            <li><a href="/about">Относительная в каталоге about</a></li>
+            <li><a href="../index.html">Относительная на каталог выше</a></li>
+            <li><a href="../../index.html">Относительная на два каталога выше</a></li>
+            <li>Привет, я <a href="https://google.com">контекстная ссылка</a> в рамках абзаца</li>
+            <li><a href="https://docs.github.com/ru/repositories/creating-and-managing-repositories/creating-a-new-repository#creating-a-new-repository-from-the-web-ui">Ссылка на фрагмент страницы стороннего сайта</a></li>
+            <li><img src = "https://gamehag.com/static/avatar/339701_max.jpg" usemap = "#batman" alt = "batman">
+                <map name = "batman">
+                    <area shape = "rect" coords = "25,25,125,125" href = "https://google.com" alt = "Ссылка на гугол">
+                    <area shape = "circle" coords = "200,75,50" href = "https://ya.ru" alt = "Ссылка на яндекс">
+                </map></li>
+            <li><a href="">Ссылка с пустым href</a></li>
+            <li><a>Ссылка без href</a></li>
+            <li><a href="/index.html" content="nofollow">Ссылка, по которой запрещён переход поисковиками</a></li>
+            <li><a href="/index.html" content="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+            <li>
+                <ol>
+                    <li><a href="https://google.com">Нумерованная ссылка на гугол</a></li>
+                    <li><a href="https://ya.ru">Нумерованная ссылка на яндекс</a></li>
+                </ol></li>
+            <li><a href = "ftp://admin:test123@localohost/dir">Ссылка на файл на сервере FTP с авторизацией</a>
+            </li>
+          </ul>
+        </div> 
+        <div class = "block_table">
+          <h1>Таблица</h1>
+          <table>
+            <tr class="col1">
+              <td>(1;1)</td>
+              <td>(1;2)</td>
+              <td>(1;3)</td>
+              <td>(1;4)</td>
+            </tr>
+            <tr class="col2">
+              <td>(2;1)</td>
+              <td>(2;2)</td>
+              <td>(2;3)</td>
+              <td>(2;4)</td>
+            </tr>
+            <tr class="col1">
+              <td colspan="2">(3;1) и (3;2)</td>
+              <td>(3;3)</td>
+              <td>(3;4)</td>
+            </tr>
+            <tr class="col2">
+              <td>(4;1)</td>
+              <td>(4;2)</td>
+              <td>(4;3)</td>
+              <td>(4;4)</td>
+            </tr>
+            <tr class="col1">
+              <td>(5;1)</td>
+              <td colspan="3">(5;2), (5;3) и (5;4)</td>
+            </tr>
+            <tr class="col2">
+              <td>(6;1)</td>
+              <td>(6;2)</td>
+              <td>(6;3)</td>
+              <td>(6;4)</td>
+            </tr>
+        </table>
+        </div>  
+        <div class = "block_form">
+          <h1>Форма</h1>
+          <form action="#" method="post" target="_blank">
+            <fieldset>
+              <legend>Персональные данные</legend>
+              <ul>
+                <li>
+                  <label for="name_surname">ФИО:</label>
+                  <input type="text" name="name_surname" placeholder="Иван Иванов Иванович" id="name_surname" required>
+                </li>
+                <li>
+                    <label for="date">Дата рождения: </label>
+                    <input type="date" id="date" name="date">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Пол</legend>
+                <ul>
+                  <li>
+                    <input type="radio" name="sex" id="front" value="male" checked>
+                    <label for="front">Мужской</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="sex" id="back" value="female">
+                    <label for="back">Женский</label>
+                  </li>
+                </ul>
+              </fieldset>
+            <fieldset>
+              <legend>Контакты</legend>
+              <ul>
+                <li>
+                  <label for="email">E-mail:</label>
+                  <input type="email" name="mail" placeholder="ivanov@gmail.com" id="email" required>
+                </li>
+                <li>
+                  <label for="number">Телефон:</label>
+                  <input type="tel" name="phone" placeholder="+7 000 000-00-00" id="number" maxlength="21" required>
+                </li>
+              </ul>
+            </fieldset>
+            <div>
+              <label for="message">Биография</label>
+              <br>
+              <textarea name="comment" placeholder="Расскажите о себе" id="message"></textarea>
+            </div>
+            <fieldset>
+              <legend>Любимый язык программирования</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="Pascal" id="Pascal" checked>
+                  <label for="Pascal">Pascal</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="C" id="C" checked>
+                    <label for="C">C</label>
+                </li>    
+                <li>
+                    <input type="checkbox" name="C++" id="C++" checked>
+                    <label for="C++">C++</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="JavaScript" id="JavaScript" checked>
+                    <label for="JavaScript">JavaScript</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="PHP" id="PHP" checked>
+                    <label for="PHP">PHP</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Python" id="Python" checked>
+                    <label for="Python">Python</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Java" id="Java" checked>
+                    <label for="Java">Java</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Haskel" id="Haskel" checked>
+                    <label for="Haskel">Haskel</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Clojure" id="Clojure" checked>
+                    <label for="Clojure">Clojure</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Prolog" id="Prolog" checked>
+                    <label for="Prolog">Prolog</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="Scala" id="Scala" checked>
+                    <label for="Scala">Scala</label>
+                </li>
+              </ul>
+            </fieldset>
+            С контрактом ознакомлен(-а)
+                <input type="checkbox" name="Check" id="Check" checked>
+                <label for="Check"></label>
+            <div>
+              <button type="submit">Сохранить</button>
+            </div>
+          </form>
+        </div>
+      <footer>
+        <div id = "footer_txt">© Tolstenkov Anton</div>
+      </footer>
+    </body>
+</html>
