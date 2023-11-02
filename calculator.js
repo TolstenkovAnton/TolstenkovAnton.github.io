@@ -3,7 +3,7 @@ function calculate_price()
 {
     let product = document.getElementById("products").value;
     let n = document.getElementById("number").value;
-    if (n.isNaN && parseFloat(parseInt(n)) == parseFloat(n) && n > 0)
+    if (!Number.isNaN(n) && parseFloat(parseInt(n)) == parseFloat(n) && n > 0)
     {
         let cost = n * product;
         cost = cost.toFixed(2);
