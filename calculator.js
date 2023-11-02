@@ -1,9 +1,9 @@
+/*jslint browser */
 function calculate_price()
 {
-    console.log("Я запустился");
     let product = document.getElementById("products").value;
     let n = document.getElementById("number").value;
-    if (!isNaN(n) && parseFloat(parseInt(n)) == parseFloat(n) && n > 0)
+    if (n.isNaN && parseFloat(parseInt(n)) == parseFloat(n) && n > 0)
     {
         let cost = n * product;
         cost = cost.toFixed(2);
@@ -11,6 +11,6 @@ function calculate_price()
     }
     else
     {
-        document.getElementById("result").textContent = "Неправильный формат ввода кол-ва товара";
+        document.getElementById("result").textContent = "Ошибка ввода";
     }
 }

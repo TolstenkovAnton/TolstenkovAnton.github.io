@@ -8,6 +8,10 @@ header
   border-radius: 0px 0px 10px 10px;
 }
 
+select
+{
+  width: 200px;
+}
 .logo 
 { 
   align-self: center;
@@ -56,6 +60,10 @@ footer
   height: 90px;
   align-self: stretch;
   border-radius: 10px 10px 0px 0px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 #footer_txt
@@ -77,7 +85,7 @@ footer
   border:#031926 solid 5px;
   border-radius: 10px;
   padding: 10px;
-  margin: 124px;
+  margin: 120px;
 }
 
 #result
