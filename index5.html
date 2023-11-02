@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <title>REC LABELS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style5.css">
+        <script src="calculator.js" defer></script>
+    </head>
+    <body>       
+        <header class = "rounded-bottom"> 
+            <img src="icon.png" alt = "logo" class = "logo"> 
+            <div id = "name">RECORDING LABELS</div> 
+        </header>
+        <div class="calculator">
+            <h1>Калькулятор товаров</h1>
+            <label for="products">Наименования товаров</label>
+            <select id="products" name="products" required>
+                <option value="249.99">Пельмени - 249.99 руб.</option>
+                <option value="69.99">Сметана - 69.99 руб.</option>
+                <option value="149.99">Брусничный соус - 149.99 руб.</option>
+                <option value="69.99">Добрый кола - 69.99 руб.</option>
+                <option value="99.99">Малосольные огурцы - 99.99 руб.</option>
+                <option value="5.99">Пакет - 5.99 руб.</option>
+            </select>
+            <label for = "number">Количество выбранного товара:</label>
+            <input type = "number" id="number" min="1" required>
+            <input type = "button" class = "button" onclick = "calculate_price()" value = "Подсчитать стоимость">
+            <label for = "result">Стоимость заказа:</label>
+            <div id = "result"></div>
+        </div>
+        <footer class = "rounded-top mt-2">
+            <div id = "footer_txt">© Tolstenkov Anton</div>
+        </footer>
+    </body>
+</html>

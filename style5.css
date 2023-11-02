@@ -2,7 +2,6 @@ header
 { 
   display: flex;
   flex-direction: row;
-  order: 1;
   background-color: #031926;
   height: 280px;
   width: 100%;
@@ -17,8 +16,8 @@ header
 
 .button 
 {
-  background-color: #9370DB;
-  color:#031926;
+  background-color: #031926;
+  color:#9370DB;
   font-family: Georgia, "Times New Roman";
   display:flex;
   text-align: center;
@@ -32,68 +31,11 @@ header
   color: #9370DB;
 }
 
-.block_nav
-{
-  display: flex;
-  justify-content: center;
-  order: 2;
-  background-color: #031926;
-}
-
-.block_links
-{
-  order: 3;
-  background-color: #031926;
-  width: 100%;
-}
-
-.block_table
-{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  order: 4;
-  background-color: #031926;
-  width: 100%;
-}
-
-.block_form
-{
-  order: 5;
-  background-color: #031926;
-  width: 100%;
-}
-
 h1
 {
   color: #9370DB;
   font-family: Georgia, "Times New Roman";
   text-align: center;
-}
-
-table
-{
-  color:#031926;
-  text-align: center;
-  border: 2px solid rgb(0, 0, 0);
-}
-tr
-{
-  border-bottom: 2px solid #000;
-}
-tr.col1
-{
-  background-color: #ffffff;
-}
-tr.col2
-{
-  background-color: #9370DB;
-}
-tr td
-{
-  border-right: 2px solid black;
-  border-left: 2px solid #000000;
 }
 
 body
@@ -109,9 +51,8 @@ body
 
 footer
 { 
-  order: 6;
   background-color: #031926;
-  height: 90px;
+  height: 190px;
   align-self: stretch;
 }
 
@@ -125,11 +66,34 @@ footer
   padding-top: 25px;
 }
 
+div.calculator
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  background-color: #f5f4f4;
+  border:#031926 solid 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+div#result
+{
+  background-color: #cacaca;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+input#number
+{
+  margin-bottom: 5px;
+}
+
 @media (orientation: portrait)
 {
   header
   {
-    order: 1;
     height: 140px;
   }
   #name
@@ -149,26 +113,6 @@ footer
     left: 10px;
     height: 130px;
   }
-  .block_nav
-  {
-    order: 2; 
-  }
-  .block_table
-  {
-    order: 3;
-  }
-  .block_links
-  {
-    order: 4;
-  }
-  .block_form
-  {
-    order: 5;
-  }
-  footer
-  {
-    order: 6;
-  };
 }
 
 @media (min-width: 800px)
@@ -176,11 +120,5 @@ footer
   #name
   {
     font-size: 90px;
-  }
-  
-  .block_nav
-  {
-    display: flex;
-    flex-direction: row;
   }
 }
