@@ -5,6 +5,7 @@ header
   background-color: #031926;
   height: 280px;
   width: 100%;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .logo 
@@ -52,8 +53,9 @@ body
 footer
 { 
   background-color: #031926;
-  height: 190px;
+  height: 90px;
   align-self: stretch;
+  border-radius: 10px 10px 0px 0px;
 }
 
 #footer_txt
@@ -61,33 +63,33 @@ footer
   font-family: Georgia, "Times New Roman";
   color: #9370DB;
   font-size: 160%;
-  font-weight:900;
+  font-weight: 900;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 16px;
 }
 
-div.calculator
+.calculator
 {
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
   align-items: center;
   background-color: #f5f4f4;
   border:#031926 solid 5px;
   border-radius: 10px;
   padding: 10px;
+  margin: 124px;
 }
 
-div#result
+#result
 {
   background-color: #cacaca;
   border-radius: 10px;
-  padding: 5px;
+  margin-bottom: 10px; 
 }
 
-input#number
+#number
 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 @media (orientation: portrait)
