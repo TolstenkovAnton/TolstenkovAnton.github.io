@@ -17,7 +17,7 @@
         <div class="services_calculator">
             <h1 class="">Калькулятор товаров</h1>
     
-            <label for="radio" class="">Товар:</label>
+            <h2>Товар:</h2>
             <div id="radio">
                 <div>
                     <input onclick="backpack_extend()" type="radio" id="backpack_radio" name="radio" value="0" required>
@@ -53,10 +53,10 @@
                 </div>
                 <div class="pen_add" id="pen_add">
                     <label for="colors">Выберите цвет:</label>
-                    <select name="colors" id="colors" required>
-                        <option value="300" class="">Красная (300 рублей)</option>
-                        <option value="400" class="">Синяя (400 рублей)</option>
-                        <option value="500" class="">Чёрная (500 рублей)</option>
+                    <select id="colors" name="colors">
+                        <option value="300">Красная (300 рублей)</option>
+                        <option value="400">Синяя (400 рублей)</option>
+                        <option value="500">Чёрная (500 рублей)</option>
                     </select>
                 </div>
                 <div>
@@ -67,8 +67,8 @@
             <label class="" for="number_items">Количество выбранного товара:</label>
             <input type="number" id="number_items" min="1" required>
             <input type = "button" class = "button" onclick = "calculate_price_items()" value = "Подсчитать стоимость">
-            <label for="result_items" class="">Стоимость заказа:</label>
-            <div id="result_items" class=""></div>
+            <h1>Стоимость заказа:</h1>
+            <div id="result" class=""></div>
         </div>
     </body>
 </html>
