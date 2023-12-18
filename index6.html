@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">   
+    <head>
+        <title>REC LABELS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style6.css">
+        <script src="calculator6.js" defer></script>
+    </head>
+    <body>       
+        <header> 
+            <img src="icon.png" alt = "logo" class = "logo"> 
+            <div id = "name">RECORDING LABELS</div> 
+        </header>
+        <div class="services_calculator">
+            <h1 class="">Калькулятор товаров</h1>
+    
+            <label for="radio" class="">Товар:</label>
+            <div id="radio">
+                <div>
+                    <input onclick="backpack_extend()" type="radio" id="backpack_radio" name="radio" value="0" required>
+                    <label for="backpack_radio">Рюкзак (3990 рублей)</label>
+                </div>
+                <div class="backpack_add" id="backpack_add">
+                    <label for="backpack_radio">Выберите нужные опции:</label>
+                    <div class="checkbox_backpack" id="checkbox_backpack">
+                        <div>
+                            <input value="500" type="checkbox" name="checkbox_notebook" id="checkbox_notebook">
+                            <label for="checkbox_notebook">Отсек для ноутбука (500 рублей)</label>
+                        </div>
+
+                        <div>
+                            <input value="300" type="checkbox" name="checkbox_straps" id="checkbox_straps">
+                            <label for="checkbox_straps">Дополнительные ручки (300 рублей)</label>
+                        </div>
+    
+                        <div>
+                            <input value="400" type="checkbox" name="checkbox_carbine" id="checkbox_carbine">
+                            <label for="checkbox_carbine">Карабин (400 рублей)</label>
+                        </div>
+    
+                        <div>
+                            <input value="1000" type="checkbox" name="checkbox_water" id="checkbox_water">
+                            <label for="checkbox_water">Отсек для хранения воды (200 рублей)</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input onclick="pen_extend()" type="radio" id="pen" name="radio" value="1" required>
+                    <label for="pen">Ручка</label>
+                </div>
+                <div class="pen_add" id="pen_add">
+                    <label for="colors">Выберите цвет:</label>
+                    <select name="colors" id="colors" required>
+                        <option value="300" class="">Красная (300 рублей)</option>
+                        <option value="400" class="">Синяя (400 рублей)</option>
+                        <option value="500" class="">Чёрная (500 рублей)</option>
+                    </select>
+                </div>
+                <div>
+                    <input onclick="pencilbox_extend()" type="radio" id="pencilbox" name="radio" value="2" required>
+                    <label for="pencilbox">Пенал (400 рублей)</label>
+                </div>
+            </div>
+            <label class="" for="number_items">Количество выбранного товара:</label>
+            <input type="number" id="number_items" min="1" required>
+            <input type = "button" class = "button" onclick = "calculate_price_items()" value = "Подсчитать стоимость">
+            <label for="result_items" class="">Стоимость заказа:</label>
+            <div id="result_items" class=""></div>
+        </div>
+    </body>
+</html>

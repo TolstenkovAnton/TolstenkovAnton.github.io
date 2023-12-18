@@ -1,0 +1,137 @@
+header
+{ 
+  display: flex;
+  flex-direction: row;
+  background-color: #031926;
+  height: 280px;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+select
+{
+  width: 200px;
+}
+
+.logo 
+{ 
+  align-self: center;
+  height: 130px;
+  width: 130px;
+}
+
+.button 
+{
+  background-color: #031926;
+  color:#9370DB;
+  font-family: Georgia, "Times New Roman";
+  display:flex;
+  text-align: center;
+}
+
+#name
+{
+  align-self: center;
+  font-family: Georgia, "Times New Roman";
+  font-weight:300;
+  color: #9370DB;
+}
+
+h1
+{
+  color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  text-align: center;
+}
+
+body
+{
+  display:flex;
+  flex-direction: column;
+  background-color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  font-size: 23px;
+  color:#9370DB;
+  align-items: center;
+}
+
+div.services_calculator
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f4f4;
+  border:#031926 solid 5px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 120px;
+}
+
+div.backpack_add
+{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+div.backpack_add
+{
+  display: none;
+}
+
+div#radio
+{
+  display: flex;
+  flex-direction: column;
+}
+
+div.pen_add
+{
+  display: none;
+  margin-left: 25px;
+}
+
+div#result_items
+{
+  background-color: #cacaca;
+  border-radius: 10px;
+  margin-bottom: 10px; 
+}
+
+input#number_items
+{
+  margin-bottom: 10px;
+}
+
+@media (orientation: portrait)
+{
+  header
+  {
+    height: 140px;
+  }
+  #name
+  {
+    font-size: 100%;
+    font-family: Georgia, "Times New Roman";
+    font-weight:900;
+    color: #9370DB;
+  }
+  h1
+  {
+    font-size: 30px;
+  }
+  .logo
+  {
+    top: 10px;
+    left: 10px;
+    height: 130px;
+  }
+}
+
+@media (min-width: 800px)
+{
+  #name
+  {
+    font-size: 90px;
+  }
+}
