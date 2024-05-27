@@ -144,7 +144,7 @@
     
     try {
       $stmt = $db->prepare("INSERT INTO application (fio, telephone, email, bday, sex, biography) VALUES (?, ?, ?, ?, ?, ?)");
-      $stmt->execute([$fio, $telephone, $email, strtotime($bday), $sex, $biography]);
+      $stmt->execute([$fio, $telephone, $email, $bday, $sex, $biography]);
       $fid = $db->lastInsertId();
       $stmt1 = $db->prepare("INSERT INTO app_link_lang (id_app, id_prog_lang) VALUES (?, ?)");
       foreach($languages as $row){
