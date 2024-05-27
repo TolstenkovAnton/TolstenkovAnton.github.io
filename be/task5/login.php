@@ -26,7 +26,6 @@
         $uid = $stmt->fetchAll(PDO::FETCH_ASSOC)[0]['id'];
         $_SESSION['login'] = $_POST['login'];
         $_SESSION['user_id'] = $uid;
-        // Делаем перенаправление.
         header('Location: ./');
       }
       else{
@@ -45,14 +44,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style8.css">
+    <link rel="stylesheet" href="style.css">
     <title>Задание 5</title>
 </head>
 <body>
   <div class="pform pformAuth">
     <form action="" method="post">
-      <div class="message" style="color: red;"><?php echo $error; ?></div>
+      <div class="message" style="color: rgb(182, 100, 23);"><?php echo $error; ?></div>
       <h3>Авторизация</h3>
         <div>
           <input class="w100" type="text" name="login" placeholder="Логин">
