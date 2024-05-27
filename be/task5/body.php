@@ -13,8 +13,10 @@
 <div class="block_form">
     <form action="" method="post">
         <h3>Форма</h3>
-        if($log) echo '<button type="submit" class="logout_form" name="logout_form">Выйти</button>'; 
-        else echo '<a href="login.php" class="login_form" name="logout_form">Войти</a>';
+        <?php
+            if($log) echo '<button type="submit" class="logout_form" name="logout_form">Выйти</button>'; 
+            else echo '<a href="login.php" class="login_form" name="logout_form">Войти</a>';
+        ?>
         <div class="message"><?php if(isset($messages['success'])) echo $messages['success']; ?></div>
         <div class="message message_info"><?php if(isset($messages['info'])) echo $messages['info']; ?></div>
         <div>
