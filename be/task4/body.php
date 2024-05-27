@@ -33,12 +33,12 @@
         <div class="mgn">
             <div>Пол:</div>
             <label>
-                <input type="radio" name="sex" value="male">
+                <input type="radio" name="sex" value="male" <?php if($values['sex'] == 'male') echo 'checked';?>>
                 <span class="<?php echo ($errors['sex'] != NULL) ? 'texterror2' : ''; ?>">Мужской</span>
             </label>
             <br>
             <label>
-                <input type="radio" name="sex" value="female">
+                <input type="radio" name="sex" value="female" <?php if($values['sex'] == 'female') echo 'checked';?>>
                 <span class="<?php echo ($errors['sex'] != NULL) ? 'texterror2' : ''; ?>">Женский</span>
             </label>
             <div class="texterror"><?php echo $messages['sex']?></div>
