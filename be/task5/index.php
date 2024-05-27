@@ -217,13 +217,14 @@
         $stmt1->execute([$_SESSION['form_id'], $row['id_prog_lang']]);
       }
     }
-    else {
+    else 
+    {
       $login = substr(uniqid(), 0, 4).rand(10, 100);
       $password = rand(100, 1000).substr(uniqid(), 4, 10);
       setcookie('login', $login);
       setcookie('password', $password);
       $mpassword = md5($password);
-    
+    }
     try {
       $stmt = $db->prepare("INSERT INTO users (login, password) VALUES (?, ?)");
       $stmt->execute([$login, $mpassword]);
