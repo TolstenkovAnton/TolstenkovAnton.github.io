@@ -77,7 +77,7 @@
         $form_id = $fet['id'];
         $_SESSION['form_id'] = $form_id;
         $dbL = $db->prepare("SELECT l.name_prog_lang FROM app_link_lang f
-          LEFT JOIN prog_lang l ON l.id_app = f.id_prog_lang
+          LEFT JOIN prog_lang l ON l.id_prog_lang = f.id_prog_lang
           WHERE f.id_app = ?");
         $dbL->execute([$form_id]);
         $langssa = [];
