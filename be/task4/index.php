@@ -148,7 +148,7 @@
       $fid = $db->lastInsertId();
       $stmt1 = $db->prepare("INSERT INTO app_link_lang (id_app, id_prog_lang) VALUES (?, ?)");
       foreach($languages as $row){
-          $stmt1->execute([$fid, $row['id_link']]);
+          $stmt1->execute([$fid, $row['id_prog_lang']]);
       }
     }
     catch(PDOException $e){
