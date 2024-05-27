@@ -50,7 +50,7 @@
 
     $langssa = explode(',', $values['langs']);
 
-    include('form.php');
+    include('body.php');
   }
   else{ //POST
     $fio = (!empty($_POST['fio']) ? $_POST['fio'] : '');
