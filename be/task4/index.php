@@ -106,7 +106,7 @@
     if(!val_empty('langs', "Выберите хотя бы один язык", empty($langs))){
       try {
         $inQuery = implode(',', array_fill(0, count($langs), '?'));
-        $dbLangs = $db->prepare("SELECT id, name FROM languages WHERE name IN ($inQuery)");
+        $dbLangs = $db->prepare("SELECT id_prog_lang, name_prog_lang FROM prog_lang WHERE name IN ($inQuery)");
         foreach ($langs as $key => $value) {
           $dbLangs->bindValue(($key+1), $value);
         }
