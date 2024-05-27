@@ -1,8 +1,7 @@
 <?php
   header('Content-Type: text/html; charset=UTF-8');
   session_start();
-  if (!empty($_SESSION['login']))
-  {
+  if (!empty($_SESSION['login'])) {
     header('Location: ./');
     exit();
   }
@@ -10,12 +9,7 @@
 
   $error = '';
 
-  if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-
-  }
-  else
-  {
-    require('connection.php');
+  if ($_SERVER['REQUEST_METHOD'] != 'GET') {
     $login = $_POST['login'];
     $password = md5($_POST['password']);
     try {
@@ -37,6 +31,7 @@
       exit();
     }
   }
+ 
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +39,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style8.css">
+    <script src="libs/jquery-3.4.1.min.js"></script>
     <title>Задание 5</title>
 </head>
 <body>
