@@ -5,11 +5,14 @@
     header('Location: ./');
     exit();
   }
-
-
+  
   $error = '';
 
   if ($_SERVER['REQUEST_METHOD'] != 'GET') {
+  include("../hid_vars.php");
+  $db_req = 'mysql:dbname=' . $database . ';host=' . $host;
+  $db = new PDO($db_req, $user, $password,
+  [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
     $login = $_POST['login'];
     $password = md5($_POST['password']);
     try {
@@ -22,7 +25,8 @@
         $_SESSION['user_id'] = $uid;
         header('Location: ./');
       }
-      else{
+      else
+      {
         $error = 'Неверный логин или пароль';
       }
     }
