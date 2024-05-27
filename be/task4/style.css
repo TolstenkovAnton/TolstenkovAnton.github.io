@@ -1,0 +1,65 @@
+header
+{ 
+  display: flex;
+  flex-direction: row;
+  order: 1;
+  background-color: #031926;
+  height: 280px;
+  width: 100%;
+}
+
+.block_form
+{
+  order: 5;
+  background-color: #031926;
+  width: 100%;
+}
+
+h1
+{
+  color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  text-align: center;
+}
+
+body
+{
+  display:flex;
+  flex-direction: column;
+  background-color: #9370DB;
+  font-family: Georgia, "Times New Roman";
+  font-size: 23px;
+  color:#9370DB;
+  align-items: center;
+}
+
+.borders
+{
+  border-color: rgb(182, 100, 23);
+}
+
+.texterror
+{
+  color: rgb(182, 100, 23);
+  margin-bottom: 15px;
+}
+
+form .mgn
+{
+    text-align: left;
+}
+
+form .mgn label
+{
+    margin-left: 20px;
+}
+
+form .mgn > input
+{
+    margin-left: 24px;
+}
+
+.texterror2
+{
+  color: rgb(182, 100, 23);
+}
