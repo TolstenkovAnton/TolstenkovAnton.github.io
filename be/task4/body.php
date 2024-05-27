@@ -27,8 +27,8 @@
             <div class="texterror"><?php echo $messages['email']?></div>
         </div>
         <div>
-            <input class="w100 <?php echo ($errors['birthday'] != NULL) ? 'borders' : ''; ?>" value="<?php if($values['birthday'] > 100000) echo $values['birthday']; ?>" type="date" name="birthday">
-            <div class="texterror"><?php echo $messages['birthday']?></div>
+            <input class="w100 <?php echo ($errors['bday'] != NULL) ? 'borders' : ''; ?>" value="<?php if($values['bday'] > 100000) echo $values['bday']; ?>" type="date" name="bday">
+            <div class="texterror"><?php echo $messages['bday']?></div>
         </div>
         <div class="mgn">
             <div>Пол:</div>
