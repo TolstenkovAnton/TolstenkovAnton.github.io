@@ -4,13 +4,10 @@
   function del_cook($cook){
     setcookie($cook.'_error', '', time() - 30 * 24 * 60 * 60);
   }
-  
-  $db;
-
-  function conn(){
-    global $db;
-    include('connection.php');
-  }
+  include("../hid_vars.php");
+  $db_req = 'mysql:dbname=' . $database . ';host=' . $host;
+  $db = new PDO($db_req, $user, $password,
+  [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     $fio = (!empty($_COOKIE['fio_error']) ? $_COOKIE['fio_error'] : '');
@@ -107,7 +104,6 @@
     }
     val_empty('sex', "Выберите пол", (empty($sex) || !preg_match('/^(male|female)$/', $sex)));
     if(!val_empty('langs', "Выберите хотя бы один язык", empty($langs))){
-      conn();
       try {
         $inQuery = implode(',', array_fill(0, count($langs), '?'));
         $dbLangs = $db->prepare("SELECT id, name FROM languages WHERE name IN ($inQuery)");
