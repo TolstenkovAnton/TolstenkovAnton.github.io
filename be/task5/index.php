@@ -209,7 +209,7 @@
       $stmt = $db->prepare("UPDATE application SET fio = ?, telephone = ?, email = ?, bday = ?, sex = ?, biography = ? WHERE user_id = ?");
       $stmt->execute([$fio, $telephone, $email, $bday, $sex, $biography, $_SESSION['user_id']]);
       
-      $stmt = $db->prepare("DELETE FROM app_link_lang WHERE id_app	 = ?");
+      $stmt = $db->prepare("DELETE FROM app_link_lang WHERE id_app = ?");
       $stmt->execute([$_SESSION['form_id']]);
       
       $stmt1 = $db->prepare("INSERT INTO app_link_lang (id_app, id_prog_lang) VALUES (?, ?)");
