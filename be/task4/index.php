@@ -33,9 +33,9 @@
       return;
     }
     
-    if (!empty($_COOKIE['save'])) {
+    if (!empty($_COOKIE['save'])) 
+    {
       setcookie('save', '', 100000);
-      // Если есть параметр save, то выводим сообщение пользователю.
       $messages['success'] = '<div class="message">Спасибо, данные сохранены.</div>';
     }
        
@@ -52,7 +52,7 @@
 
     include('body.php');
   }
-  else{ //POST
+  else{
     $fio = (!empty($_POST['fio']) ? $_POST['fio'] : '');
     $telephone = (!empty($_POST['telephone']) ? $_POST['telephone'] : '');
     $email = (!empty($_POST['email']) ? $_POST['email'] : '');
@@ -70,7 +70,7 @@
       $res = false;
       $setVal = $_POST[$cook];
       if ($usl) {
-        setcookie($cook.'_error', $comment, time() + 24 * 60 * 60); //сохраняем на сутки
+        setcookie($cook.'_error', $comment, time() + 24 * 60 * 60);
         $error = true;
         $res = true;
       }
@@ -80,7 +80,7 @@
         $setVal = ($langs != '') ? implode(",", $langs) : '';
       }
       
-      setcookie($cook.'_value', $setVal, time() + 30 * 24 * 60 * 60); //сохраняем на месяц
+      setcookie($cook.'_value', $setVal, time() + 30 * 24 * 60 * 60);
       return $res;
     }
     
@@ -126,12 +126,10 @@
     val_empty('contract', "Ознакомьтесь с контрактом", empty($contract));
     
     if ($error) {
-      // При наличии ошибок перезагружаем страницу и завершаем работу скрипта.
       header('Location: index.php');
       exit();
     }
     else {
-      // Удаляем Cookies с признаками ошибок.
       del_cook('fio');
       del_cook('telephone');
       del_cook('email');
@@ -164,10 +162,8 @@
     setcookie('biography_value', $biography, time() + 24 * 60 * 60 * 365);
     setcookie('contract_value', $contract, time() + 24 * 60 * 60 * 365);
 
-    // Сохраняем куку с признаком успешного сохранения.
     setcookie('save', '1');
   
-    // Делаем перенаправление.
     header('Location: index.php');
   }
 ?>
