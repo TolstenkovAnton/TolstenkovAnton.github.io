@@ -74,7 +74,7 @@
         $dbFD = $db->prepare("SELECT * FROM application WHERE user_id = ?");
         $dbFD->execute([$_SESSION['user_id']]);
         $fet = $dbFD->fetchAll(PDO::FETCH_ASSOC)[0];
-        $form_id = $fet['id'];
+        $form_id = $fet['id_app'];
         $_SESSION['form_id'] = $form_id;
         $dbL = $db->prepare("SELECT l.name_prog_lang FROM app_link_lang f
           LEFT JOIN prog_lang l ON l.id_prog_lang = f.id_prog_lang
