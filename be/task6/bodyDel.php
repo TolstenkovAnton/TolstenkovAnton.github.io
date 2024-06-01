@@ -1,5 +1,5 @@
 <?php
-    include("../hid_vars.php")
+    include("../hid_vars.php");
     $db_req = 'mysql:dbname=' . $database . ';host=' . $host;
     $db = new PDO($db_req, $user, $password,
         [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
