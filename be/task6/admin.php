@@ -45,7 +45,7 @@
     <tbody>
       <?php
         $dbFD = $db->query("SELECT * FROM application ORDER BY id_app DESC");
-        while($row = $dbFD->fetch(PDO::FETCH_ASSOC)){
+        while($row = $dbFD->fetchAll(PDO::FETCH_ASSOC)){
           echo '<tr data-id='.$row['id_app'].'>
                   <td>'.$row['id_app'].'</td>
                   <td>'.$row['fio'].'</td>
