@@ -114,6 +114,7 @@
         foreach($dbL->fetchAll(PDO::FETCH_ASSOC) as $item){
           $langssa[] = $item['name_prog_lang'];
         }
+        var_dump($fet);
         setVal('fio', $fet['fio']);
         setVal('telephone', $fet['telephone']);
         setVal('email', $fet['email']);
