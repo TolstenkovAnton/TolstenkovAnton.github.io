@@ -45,13 +45,13 @@
     <tbody>
       <?php
         $dbFD = $db->query("SELECT * FROM application ORDER BY id_app DESC");
-        while($row = $dbFD->fetchAll(PDO::FETCH_ASSOC)){
+        while($row = $dbFD->fetch(PDO::FETCH_ASSOC)){
           echo '<tr data-id='.$row['id_app'].'>
                   <td>'.$row['id_app'].'</td>
                   <td>'.$row['fio'].'</td>
                   <td>'.$row['telephone'].'</td>
                   <td>'.$row['email'].'</td>
-                  <td>'.date("d.m.Y", $row['bday']).'</td>
+                  <td>'.date("d.m.Y", strtotime($row['bday'])).'</td>
                   <td>'.(($row['sex'] == "male") ? "Мужской" : "Женский").'</td>
                   <td class="wb">'.$row['biography'].'</td>
                   <td>';
