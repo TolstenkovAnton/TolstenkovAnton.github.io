@@ -18,6 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styleAdmin.css">
+    <script src="./libs/js/jquery-3.4.1.min.js"></script>
     <title>Задание 6 (ADMIN)</title>
 </head>
 <body class="admin">
