@@ -24,6 +24,7 @@
         ?>
         <div class="message"><?php if(isset($messages['success'])) echo $messages['success']; ?></div>
         <div class="message message_info"><?php if(isset($messages['info'])) echo $messages['info']; ?></div>
+        <div class="message message_error"><?php if(isset($messages['error'])) echo $messages['error']; ?></div>
         <div>
             <input class="w100 <?php echo ($errors['fio'] != NULL) ? 'borders' : ''; ?>" value="<?php echo $values['fio']; ?>" type="text" name="fio" placeholder="ФИО">
             <div class="texterror"><?php echo $messages['fio']?></div>
