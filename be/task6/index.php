@@ -117,7 +117,7 @@
         setVal('fio', $fet['fio']);
         setVal('telephone', $fet['telephone']);
         setVal('email', $fet['email']);
-        setVal('bday', date("Y-m-d", intval($fet['bday'])));
+        setVal('bday', $fet['bday']);
         setVal('sex', $fet['sex']);
         setVal('langs', $langs);
         setVal('biography', $fet['biography']);
@@ -242,7 +242,7 @@
     if ($log) {
       
       $stmt = $db->prepare("UPDATE application SET fio = ?, telephone = ?, email = ?, bday = ?, sex = ?, biography = ? WHERE user_id = ?");
-      $stmt->execute([$fio, $telephone, $email, $bday, $sex, $biography, $_SESSION['user_id']]);
+      $stmt->execute([$fio, $telephone, $email, $bday, $sex, $biography, $uid]);
       
       $stmt = $db->prepare("DELETE FROM app_link_lang WHERE id_app = ?");
       $stmt->execute([$_SESSION['form_id']]);

@@ -32,7 +32,7 @@
             <div class="texterror"><?php echo $messages['email']?></div>
         </div>
         <div>
-            <input class="w100 <?php echo ($errors['bday'] != NULL) ? 'borders' : ''; ?>" value="<?php if($values['bday'] > 100000) echo $values['bday']; ?>" type="date" name="bday">
+            <input class="w100 <?php echo ($errors['bday'] != NULL) ? 'borders' : ''; ?>" value="<?php echo $values['bday']; ?>" type="date" name="bday">
             <div class="texterror"><?php echo $messages['bday']?></div>
         </div>
         <div class="mgn">
