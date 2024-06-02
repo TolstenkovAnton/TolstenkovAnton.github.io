@@ -299,6 +299,6 @@
     setcookie('save', '1');
   
     // Делаем перенаправление.
-    header('Location: index.php');
+    header('Location: index.php'.(($getUid != NULL) ? '?uid='.$uid : ''));
   }
 ?>
