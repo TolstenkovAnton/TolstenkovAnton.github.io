@@ -38,7 +38,18 @@
     del_cook('biography', $p);
     del_cook('contract', $p);
   }
-
+  
+  function set_cook($cook, $val, $dop_time = 1){
+    setcookie($cook, $val, time() + 24 * 60 * 60 * $dop_time);
+  }
+  
+  function user_exit(){
+    del_cook_all(1);
+    session_destroy();
+    header('Location: index.php');
+    exit();
+  }
+  
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if(($adminLog && isset($getUid)) || !$adminLog){
       $cookAdmin = (isset($_COOKIE['admin_value']) ? $_COOKIE['admin_value'] : '');
