@@ -30,13 +30,13 @@
   }
   function del_cook_all($p = 0){
     del_cook('fio', $p);
-    del_cook('phone', $p);
+    del_cook('telephone', $p);
     del_cook('email', $p);
-    del_cook('birthday', $p);
-    del_cook('gender', $p);
-    del_cook('like_lang', $p);
+    del_cook('bday', $p);
+    del_cook('sex', $p);
+    del_cook('langs', $p);
     del_cook('biography', $p);
-    del_cook('oznakomlen', $p);
+    del_cook('contract', $p);
   }
 
   if ($_SERVER['REQUEST_METHOD'] == 'GET') {
