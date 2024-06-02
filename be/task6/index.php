@@ -102,7 +102,7 @@
     if ($error && $log) {
       try {
         $dbFD = $db->prepare("SELECT * FROM application WHERE user_id = ?");
-        $dbFD->execute([$_SESSION['user_id']]);
+        $dbFD->execute([$uid]);
         $fet = $dbFD->fetchAll(PDO::FETCH_ASSOC)[0];
         $form_id = $fet['id_app'];
         $_SESSION['form_id'] = $form_id;
@@ -114,13 +114,12 @@
         foreach($dbL->fetchAll(PDO::FETCH_ASSOC) as $item){
           $langssa[] = $item['name_prog_lang'];
         }
-        var_dump($fet);
         setVal('fio', $fet['fio']);
         setVal('telephone', $fet['telephone']);
         setVal('email', $fet['email']);
         setVal('bday', date("Y-m-d", intval($fet['bday'])));
         setVal('sex', $fet['sex']);
-        setVal('langs', $like_lang);
+        setVal('langs', $langs);
         setVal('biography', $fet['biography']);
         setVal('contract', $fet['contract']);
       }
