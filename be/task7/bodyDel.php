@@ -1,15 +1,12 @@
 <?php
     include("../hid_vars.php");
-    $db_req = 'mysql:dbname=' . $database . ';host=' . $host;
-    $db = new PDO($db_req, $user, $password,
-        [PDO::ATTR_PERSISTENT => true, PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
     function res($status, $val){
         exit(json_encode(array('status' => $status, 'value' => $val), JSON_UNESCAPED_UNICODE));
     }
     
     $login = $_SERVER['PHP_AUTH_USER'];
-    $password = md5($_SERVER['PHP_AUTH_PW']);
+    $password2 = md5($_SERVER['PHP_AUTH_PW']);
     
     if(!checkAdmin($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) res('error', "Вы не авторизованы");
 
@@ -20,7 +17,7 @@
     if($csrf_token != $csrf_token_admin) res('error', "Не соответствие CSRF токена");
     
     $stmt = $db->prepare("SELECT id FROM users WHERE login = ? and password = ?");
-    $stmt->execute([$login, $password]);
+    $stmt->execute([$login, $password2]);
     $its = $stmt->rowCount();
     
     if(!$its) res('error', "Неверный логин или пароль");
