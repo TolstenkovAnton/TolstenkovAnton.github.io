@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin: 0;
+    background: #9370DB;;
 }
 *{
     box-sizing: border-box;
@@ -13,7 +14,7 @@ header{
     top: 0;
     padding: 10px;
     text-align: center;
-    background: #fff;
+    background: #9370DB;;
     z-index: 10;
 }
 header div{
@@ -58,7 +59,7 @@ thead, th, td{
     vertical-align: middle;
 }
 tbody tr:nth-child(even){
-    background: rgba(180, 220, 250, 0.1);
+    background: #e3e3e3 !important;
 }
 tbody tr:nth-child(odd){
     background: #ffffff;
@@ -71,7 +72,7 @@ tbody tr:nth-child(odd):hover{
 tbody tr:nth-child(even):hover{
     transition: 0.2s;
     filter: brightness(110%);
-    background: rgba(180, 200, 250, 0.2) !important;
+    background: #e3e3e3 !important;
 }
 thead{
     background: #eee;

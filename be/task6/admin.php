@@ -26,7 +26,7 @@
   <header>
     <div><a href="#data">Информация</a></div>
     <div><a href="#stats">Статистика</a></div>
-</header>
+  </header>
 
   <table id="data">
     <thead>
