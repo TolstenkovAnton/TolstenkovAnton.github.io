@@ -36,11 +36,11 @@ table{
 #data{
     margin-top: 50px;
 }
-.analize{
+.stats{
     width: unset;
     margin: 20px auto;
 }
-.analize td{
+.stats td{
     min-width: 160px;
 }
 tr{

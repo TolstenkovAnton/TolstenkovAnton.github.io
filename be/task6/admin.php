@@ -25,7 +25,7 @@
 
   <header>
     <div><a href="#data">Информация</a></div>
-    <div><a href="#analize">Статистика</a></div>
+    <div><a href="#stats">Статистика</a></div>
 </header>
 
   <table id="data">
@@ -75,7 +75,7 @@
     </tbody>
   </table>
 
-  <table class="analize" id="analize">
+  <table class="stats" id="stats">
     <thead>
       <tr>
         <th>ЯП</th>
