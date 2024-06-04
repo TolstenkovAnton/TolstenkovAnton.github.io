@@ -21,6 +21,12 @@ h1
   text-align: center;
 }
 
+h3
+{
+  color: #031926;
+  font-family: Georgia, "Times New Roman";
+}
+
 body
 {
   display:flex;
