@@ -12,7 +12,7 @@
 <body>
 <div class="block_form">
     <form action="" method="post">
-        <h3>Форма</h3>
+        <h1>Форма</h1>
         <?php
             if($log) echo '<button type="submit" class="logout_form" name="logout_form">Выйти</button>'; 
             else echo '<a href="login.php" class="login_form" name="logout_form">Войти</a>';
