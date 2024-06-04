@@ -51,7 +51,7 @@
 <body>
   <div class="pform pformAuth">
     <form action="" method="post">
-      <div class="message" style="color: rgb(182, 100, 23);"><?php echo $error; ?></div>
+      <div class="message"><?php echo $error; ?></div>
       <h3>Авторизация</h3>
         <div>
           <input class="w100" type="text" name="login" placeholder="Логин">

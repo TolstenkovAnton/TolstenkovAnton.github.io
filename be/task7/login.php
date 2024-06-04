@@ -62,7 +62,7 @@
         $csrf_token = bin2hex(random_bytes(32));
         $_SESSION['csrf_token_login'] = $csrf_token;
       ?>
-      <div class="message" style="color: rgb(182, 100, 23);"><?php echo $error; ?></div>
+      <div class="message"><?php echo $error; ?></div>
       <h3>Авторизация</h3>
         <div>
           <input class="w100" type="text" name="login" placeholder="Логин">
